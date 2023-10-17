@@ -300,7 +300,7 @@ class Client implements LoggerAwareInterface
      * @param LoggerInterface $logger
      * @return null
      */
-    public function setLogger(LoggerInterface $logger)
+    public function setLogger(\Psr\Log\LoggerInterface $logger): void
     {
         $this->logger = $logger;
     }
